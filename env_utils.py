@@ -53,17 +53,61 @@ def run_one_episode (env, policy_fn, max_steps=600, render=False):
         "steps": steps,
         "success": success
     }
-    
-# sanity check
+
+def evaluate(env_id, seed, policy_fn_builder, eval_episodes=20, max_steps=200):
+    """
+    policy_fn_builder(env, rng) -> policty_fn(state) -> action
+    this keeps RNG controlled and comparable
+
+    """
+    env = make_env(env_id, seed)
+    rng = np.random.default_rng(seed)
+
+    returns = []
+    successes = []
+    steps_to_goal = []
+
+    policy_fn = policy_fn_builder(env, rng)
+
+    for ep in range (eval_episodes):
+        m = run_one_episode(env, policy_fn, max_steps=max_steps)
+        returns.append(m["return"])
+        successes.append(m["success"])
+        if m["success"]:
+            steps_to_goal.append(m["steps"])
+
+    returns = np.array(returns, dtype=float)
+    successes = np.array(successes, dtype=bool)
+
+    results = {
+        "return_mean": float(returns.mean()),
+        "return_std": float(returns.std(ddof=1)) if len(returns) > 1 else 0.0,
+        "success_rate": float(successes.mean()),
+        "steps_to_goal_mean": float(np.mean(steps_to_goal)) if len(steps_to_goal) > 0 else None,
+        "steps_to_goal_std": float(np.std(steps_to_goal, ddof=1)) if len(steps_to_goal) > 1 else None,
+    }
+
+    env.close()
+    return results
+
 def random_policy (env, rng):
     def _pi(state):
         return int(rng.integers(0, env.action_space.n))
     return _pi
 
-env = make_env(seed=0)
-rng = np.random.default_rng(0)
-metrics = run_one_episode(env, random_policy(env, rng))
-print(metrics)
+# sanity check
+baseline = evaluate (
+    env_id="MountainCar-v0",
+    seed=0,
+    policy_fn_builder=lambda env, rng: random_policy(env, rng),
+    eval_episodes=20,
+    max_steps=200
+)
+print(baseline)
+# env = make_env(seed=0)
+# rng = np.random.default_rng(0)
+# metrics = run_one_episode(env, random_policy(env, rng))
+# print(metrics)
 
 # print(s) # should be a 2D state: [position, velocity]
 # print(env.observation_space.low, env.observation_space.high)
