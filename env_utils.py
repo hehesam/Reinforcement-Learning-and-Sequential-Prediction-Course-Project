@@ -96,14 +96,14 @@ def random_policy (env, rng):
     return _pi
 
 # sanity check
-baseline = evaluate (
-    env_id="MountainCar-v0",
-    seed=0,
-    policy_fn_builder=lambda env, rng: random_policy(env, rng),
-    eval_episodes=20,
-    max_steps=200
-)
-print(baseline)
+# baseline = evaluate (
+#     env_id="MountainCar-v0",
+#     seed=0,
+#     policy_fn_builder=lambda env, rng: random_policy(env, rng),
+#     eval_episodes=20,
+#     max_steps=200
+# )
+# print(baseline)
 # env = make_env(seed=0)
 # rng = np.random.default_rng(0)
 # metrics = run_one_episode(env, random_policy(env, rng))
