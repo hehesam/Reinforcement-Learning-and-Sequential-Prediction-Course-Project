@@ -1,7 +1,9 @@
 from rbf import RBF, get_state_bounds, make_centers
 from env_utils import evaluate, make_env
+from Diagnostics import sample_states_from_env, max_abs_q_over_states
 import gymnasium as gym
 import numpy as np
+import pprint
 def q_values(W, phi_s):
     return W @ phi_s # shape (A,)
 
@@ -72,13 +74,14 @@ def train_q_learning(env_id, seed, rbf, train_episodes=2000, eval_every=50,
     A = env.action_space.n
     d = rbf.d
     W = rng.normal(loc=0.0, scale=0.01, size=(A, d))
+    diag_states = sample_states_from_env(env_id, seed + 99_999, n_states=2000, max_steps=max_steps) # separate RNG stream for diagnostics
 
     history = []
     for ep in range(train_episodes):
         eps = epsilon_by_episode(ep, eps_start = 1.0, eps_end=0.05, decay_episodes=int(train_episodes*0.7))
         
         # Render every 50th episode
-        if ep % 50 == 0:
+        if ep % 100 == 0:
             env_render = make_env(env_id, seed, render_mode="human")
             train_metrics = train_one_episode_q(env_render, W, rbf, rng, gamma=gamma, alpha=alpha, eps=eps, max_steps=max_steps)
             env_render.close()
@@ -94,14 +97,18 @@ def train_q_learning(env_id, seed, rbf, train_episodes=2000, eval_every=50,
                 eval_episodes = eval_episodes,
                 max_steps = max_steps                
             )
+            max_abs_Q = max_abs_q_over_states(W, rbf, diag_states)
             history.append({
                 "episode": ep + 1,
                 "train_return": train_metrics["return"],
                 "train_mean_abs_td": train_metrics["mean_abs_td"],
+                "max_abs_Q": max_abs_Q,
                 **eval_result
             })
-            print("EP", ep+1, "eval_return", eval_result["return_mean"], "success", eval_result["success_rate"])
-
+            print("EP", ep+1,
+                "eval_return", eval_result["return_mean"],
+                "success", eval_result["success_rate"],
+                "max|Q|", round(max_abs_Q, 2))
     env.close()
     return W, history
 
@@ -116,7 +123,7 @@ W, history = train_q_learning(
     gamma=0.99,
     alpha=0.01,
 )
-print(history)
+pprint.pprint(history)
 
 # env = make_env("MountainCar-v0", seed=0)
 # A = env.action_space.n
