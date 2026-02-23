@@ -1,5 +1,5 @@
-from rbf import RBF, get_state_bounds, make_centers, make_env
-from env_utils import evaluate
+from rbf import RBF, get_state_bounds, make_centers
+from env_utils import evaluate, make_env
 import gymnasium as gym
 import numpy as np
 def q_values(W, phi_s):
@@ -76,7 +76,14 @@ def train_q_learning(env_id, seed, rbf, train_episodes=2000, eval_every=50,
     history = []
     for ep in range(train_episodes):
         eps = epsilon_by_episode(ep, eps_start = 1.0, eps_end=0.05, decay_episodes=int(train_episodes*0.7))
-        train_metrics = train_one_episode_q(env, W, rbf, rng, gamma=gamma, alpha=alpha, eps=eps, max_steps=max_steps)
+        
+        # Render every 50th episode
+        if ep % 50 == 0:
+            env_render = make_env(env_id, seed, render_mode="human")
+            train_metrics = train_one_episode_q(env_render, W, rbf, rng, gamma=gamma, alpha=alpha, eps=eps, max_steps=max_steps)
+            env_render.close()
+        else:
+            train_metrics = train_one_episode_q(env, W, rbf, rng, gamma=gamma, alpha=alpha, eps=eps, max_steps=max_steps)
 
         if (ep + 1) % eval_every == 0:
             # evaluation is greedy (no epsilon)

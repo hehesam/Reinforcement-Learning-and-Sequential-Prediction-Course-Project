@@ -1,14 +1,6 @@
 import numpy as np
 import gymnasium as gym
 
-def make_env (env_id="MountainCar-v0", seed=0):
-    env = gym.make(env_id, render_mode="human").unwrapped 
-    # seed env+action space for reproducibility
-    env.reset(seed=seed)
-    if hasattr(env.action_space, "seed"):
-        env.action_space.seed(seed)
-    return env
-
 # even though MountainCar has known ranges, it's cleaner to read them
 def get_state_bounds(env):
     low = env.observation_space.low
