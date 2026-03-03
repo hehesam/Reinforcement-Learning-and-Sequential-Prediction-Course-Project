@@ -31,8 +31,8 @@ Both algorithms are tested with multiple random seeds and various hyperparameter
 
 ### Q-Learning Results (1000 Episodes)
 
-| Sigma | Alpha | Mean Return | Return Std | Success Rate | Success Rate Std | Steps to Goal | Steps Std | Max |Q| | Max |Q| Std |
-|-------|-------|-------------|------------|--------------|------------------|---------------|-----------|---------|-------------|
+| Sigma | Alpha | Mean Return | Return Std | Success Rate | Success Rate Std | Steps to Goal | Steps Std | Max Abs Q | Max Abs Q Std |
+|-------|-------|-------------|------------|--------------|------------------|---------------|-----------|-----------|---------------|
 | 0.15 | 0.003 | -143.33 | 13.80 | 90.0% | 12.75% | 137.70 | 7.57 | 74.89 | 6.94 |
 | 0.15 | 0.005 | -144.21 | 9.04 | 100.0% | 0.00% | 144.21 | 9.04 | 72.59 | 2.26 |
 | 0.20 | 0.003 | -131.97 | 2.64 | 100.0% | 0.00% | 131.97 | 2.64 | 72.67 | 2.59 |
