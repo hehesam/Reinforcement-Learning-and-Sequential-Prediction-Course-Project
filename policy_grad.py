@@ -106,13 +106,25 @@ def train_actor_critic(env_id, seed, rbf,
     history = []
 
     for ep in range(train_episodes):
-        train_metrics = train_one_episode_ac(
-            env, Theta, v, rbf, rng,
-            gamma=gamma,
-            alpha_theta=alpha_theta,
-            alpha_v=alpha_v,
-            max_steps=max_steps
-        )
+        # Render every 100th episode
+        if ep % 100 == 0:
+            env_render = make_env(env_id, seed, render_mode="human")
+            train_metrics = train_one_episode_ac(
+                env_render, Theta, v, rbf, rng,
+                gamma=gamma,
+                alpha_theta=alpha_theta,
+                alpha_v=alpha_v,
+                max_steps=max_steps
+            )
+            env_render.close()
+        else:
+            train_metrics = train_one_episode_ac(
+                env, Theta, v, rbf, rng,
+                gamma=gamma,
+                alpha_theta=alpha_theta,
+                alpha_v=alpha_v,
+                max_steps=max_steps
+            )
 
         if (ep + 1) % eval_every == 0:
             eval_result = evaluate(

@@ -4,6 +4,7 @@ from Diagnostics import sample_states_from_env, max_abs_q_over_states
 import gymnasium as gym
 import numpy as np
 import pprint
+
 def q_values(W, phi_s):
     return W @ phi_s # shape (A,)
 
@@ -112,18 +113,18 @@ def train_q_learning(env_id, seed, rbf, train_episodes=2000, eval_every=50,
     env.close()
     return W, history
 
-# W, history = train_q_learning(
-#     env_id="MountainCar-v0",
-#     seed=0,
-#     rbf=RBF(make_centers(7, 7), *get_state_bounds(make_env("MountainCar-v0", seed=0)), sigma=0.15, add_bias=True),
-#     train_episodes=1000,
-#     eval_every=50,
-#     eval_episodes=20,
-#     max_steps=200,
-#     gamma=0.99,
-#     alpha=0.01,
-# )
-# pprint.pprint(history)
+W, history = train_q_learning(
+    env_id="MountainCar-v0",
+    seed=0,
+    rbf=RBF(make_centers(7, 7), *get_state_bounds(make_env("MountainCar-v0", seed=0)), sigma=0.15, add_bias=True),
+    train_episodes=1000,
+    eval_every=50,
+    eval_episodes=20,
+    max_steps=200,
+    gamma=0.99,
+    alpha=0.01,
+)
+pprint.pprint(history)
 
 # env = make_env("MountainCar-v0", seed=0)
 # A = env.action_space.n
