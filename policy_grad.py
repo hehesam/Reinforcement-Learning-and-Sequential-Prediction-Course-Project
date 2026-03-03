@@ -167,8 +167,8 @@ Theta, v, history = train_actor_critic(
     eval_episodes=20,
     max_steps=200,
     gamma=0.99,
-    alpha_theta=0.01,
-    alpha_v=0.01,
+    alpha_theta=0.0005, # changing these learning rates can affect stability and convergence
+    alpha_v=0.005, # If the policy gets good by episode 200 and then degrades, that usually means updates are too aggressive.
 )
 import pprint
 pprint.pprint(history)
