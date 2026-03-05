@@ -164,5 +164,5 @@ def AC_call_multiseed(env_id, seeds):
 
 env_id = "MountainCar-v0"
 seeds = [0, 1, 2, 3, 4]
-# Q_call_multiseed(env_id, seeds)
-AC_call_multiseed(env_id, seeds)
+Q_call_multiseed(env_id, seeds)
+# AC_call_multiseed(env_id, seeds)

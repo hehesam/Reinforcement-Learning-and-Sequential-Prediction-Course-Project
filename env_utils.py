@@ -2,7 +2,7 @@ import numpy as np
 import gymnasium as gym
 
 def make_env (env_id, seed, render_mode=None):
-    env = gym.make(env_id, render_mode=render_mode).unwrapped 
+    env = gym.make(env_id, render_mode=None).unwrapped 
     # seed env+action space for reproducibility
     env.reset(seed=seed)
     if hasattr(env.action_space, "seed"):

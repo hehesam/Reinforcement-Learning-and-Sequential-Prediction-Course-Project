@@ -3,3 +3,4 @@
 3. rbf.py (feature map)
 4. policy_grad.py (REINFORCE+baseline or Actor-Critic)
 5. run_experiments.py (seeds, logging, plots)
+6. Test different RBF kernel size and episodes for both q-learning and policy_grad to notice any change

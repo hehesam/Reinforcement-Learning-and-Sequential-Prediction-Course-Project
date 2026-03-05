@@ -82,7 +82,7 @@ def train_q_learning(env_id, seed, rbf, train_episodes=2000, eval_every=50,
         eps = epsilon_by_episode(ep, eps_start = 1.0, eps_end=0.05, decay_episodes=int(train_episodes*0.7))
         
         # Render every 50th episode
-        if ep % 100 == 0:
+        if ep % 1000 == 0:
             env_render = make_env(env_id, seed, render_mode="human")
             train_metrics = train_one_episode_q(env_render, W, rbf, rng, gamma=gamma, alpha=alpha, eps=eps, max_steps=max_steps)
             env_render.close()
@@ -113,18 +113,18 @@ def train_q_learning(env_id, seed, rbf, train_episodes=2000, eval_every=50,
     env.close()
     return W, history
 
-W, history = train_q_learning(
-    env_id="MountainCar-v0",
-    seed=0,
-    rbf=RBF(make_centers(7, 7), *get_state_bounds(make_env("MountainCar-v0", seed=0)), sigma=0.15, add_bias=True),
-    train_episodes=1000,
-    eval_every=50,
-    eval_episodes=20,
-    max_steps=200,
-    gamma=0.99,
-    alpha=0.01,
-)
-pprint.pprint(history)
+# W, history = train_q_learning(
+#     env_id="MountainCar-v0",
+#     seed=0,
+#     rbf=RBF(make_centers(7, 7), *get_state_bounds(make_env("MountainCar-v0", seed=0)), sigma=0.20, add_bias=True),
+#     train_episodes=2000,
+#     eval_every=50,
+#     eval_episodes=20,
+#     max_steps=200,
+#     gamma=0.99,
+#     alpha=0.01,
+# )
+# pprint.pprint(history)
 
 # env = make_env("MountainCar-v0", seed=0)
 # A = env.action_space.n

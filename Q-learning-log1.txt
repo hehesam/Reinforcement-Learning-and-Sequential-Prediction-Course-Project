@@ -1,0 +1,469 @@
+=== SEED 0 ===
+
+EP 50 eval_return -135.75 success 0.85 max|Q| 27.78
+EP 100 eval_return -118.4 success 1.0 max|Q| 45.1
+EP 150 eval_return -117.05 success 1.0 max|Q| 54.45
+EP 200 eval_return -125.65 success 1.0 max|Q| 58.87
+EP 200 eval_return -125.65 success 1.0 max|Q| 58.87
+EP 200 eval_return -125.65 success 1.0 max|Q| 58.87
+EP 250 eval_return -123.65 success 1.0 max|Q| 61.38
+EP 300 eval_return -133.55 success 1.0 max|Q| 63.42
+EP 350 eval_return -136.25 success 1.0 max|Q| 65.52
+EP 400 eval_return -135.9 success 1.0 max|Q| 67.21
+EP 450 eval_return -148.75 success 1.0 max|Q| 68.72
+EP 500 eval_return -200.0 success 0.0 max|Q| 70.07
+EP 550 eval_return -137.2 success 0.95 max|Q| 71.56
+EP 600 eval_return -200.0 success 0.0 max|Q| 73.12
+EP 650 eval_return -137.35 success 0.95 max|Q| 74.95
+EP 700 eval_return -137.65 success 0.95 max|Q| 77.39
+EP 750 eval_return -200.0 success 0.0 max|Q| 78.98
+EP 800 eval_return -200.0 success 0.0 max|Q| 80.31
+EP 850 eval_return -144.85 success 0.85 max|Q| 81.76
+EP 900 eval_return -193.75 success 0.1 max|Q| 82.02
+EP 950 eval_return -153.85 success 0.75 max|Q| 82.26
+EP 1000 eval_return -159.95 success 0.7 max|Q| 82.38
+
+=== SEED 1 ===
+
+EP 50 eval_return -135.3 success 0.85 max|Q| 27.59
+EP 100 eval_return -120.4 success 1.0 max|Q| 45.18
+EP 150 eval_return -135.15 success 1.0 max|Q| 54.47
+EP 200 eval_return -154.25 success 0.75 max|Q| 59.31
+EP 250 eval_return -125.2 success 1.0 max|Q| 61.82
+EP 300 eval_return -116.85 success 1.0 max|Q| 63.73
+EP 350 eval_return -111.4 success 1.0 max|Q| 65.65
+EP 400 eval_return -113.0 success 0.95 max|Q| 67.03
+EP 450 eval_return -116.5 success 1.0 max|Q| 67.45
+EP 500 eval_return -115.05 success 1.0 max|Q| 67.68
+EP 550 eval_return -107.75 success 1.0 max|Q| 68.24
+EP 600 eval_return -107.0 success 1.0 max|Q| 68.38
+EP 650 eval_return -109.55 success 1.0 max|Q| 68.39
+EP 700 eval_return -117.05 success 1.0 max|Q| 68.3
+EP 750 eval_return -116.3 success 1.0 max|Q| 68.16
+EP 800 eval_return -123.05 success 0.95 max|Q| 68.58
+EP 850 eval_return -123.7 success 1.0 max|Q| 68.62
+EP 900 eval_return -130.6 success 0.95 max|Q| 68.81
+EP 950 eval_return -131.95 success 0.95 max|Q| 69.37
+EP 1000 eval_return -129.45 success 1.0 max|Q| 69.92
+
+=== SEED 2 ===
+
+EP 50 eval_return -135.1 success 1.0 max|Q| 27.83
+EP 100 eval_return -159.25 success 0.6 max|Q| 45.45
+EP 150 eval_return -142.55 success 0.8 max|Q| 54.5
+EP 200 eval_return -109.75 success 1.0 max|Q| 58.9
+EP 250 eval_return -108.35 success 1.0 max|Q| 61.56
+EP 300 eval_return -134.45 success 1.0 max|Q| 63.77
+EP 350 eval_return -108.35 success 1.0 max|Q| 65.63
+EP 400 eval_return -121.9 success 0.95 max|Q| 66.54
+EP 450 eval_return -123.95 success 0.95 max|Q| 67.15
+EP 500 eval_return -112.75 success 1.0 max|Q| 67.38
+EP 550 eval_return -109.65 success 1.0 max|Q| 67.97
+EP 600 eval_return -106.5 success 1.0 max|Q| 68.12
+EP 650 eval_return -110.05 success 1.0 max|Q| 68.14
+EP 700 eval_return -111.2 success 1.0 max|Q| 67.83
+EP 750 eval_return -119.3 success 1.0 max|Q| 67.79
+EP 800 eval_return -117.2 success 1.0 max|Q| 67.72
+EP 850 eval_return -129.65 success 1.0 max|Q| 68.05
+EP 900 eval_return -134.65 success 1.0 max|Q| 68.18
+EP 950 eval_return -136.7 success 1.0 max|Q| 68.61
+EP 1000 eval_return -139.85 success 0.95 max|Q| 69.16
+
+=== SEED 3 ===
+
+EP 50 eval_return -168.65 success 0.65 max|Q| 27.64
+EP 100 eval_return -125.1 success 1.0 max|Q| 45.37
+EP 150 eval_return -144.8 success 0.85 max|Q| 54.74
+EP 200 eval_return -119.05 success 1.0 max|Q| 59.51
+EP 250 eval_return -122.5 success 1.0 max|Q| 61.88
+EP 300 eval_return -123.8 success 1.0 max|Q| 63.96
+EP 350 eval_return -156.75 success 0.7 max|Q| 65.94
+EP 400 eval_return -132.5 success 1.0 max|Q| 67.56
+EP 450 eval_return -129.4 success 1.0 max|Q| 68.02
+EP 500 eval_return -122.75 success 1.0 max|Q| 68.34
+EP 550 eval_return -108.15 success 1.0 max|Q| 68.56
+EP 600 eval_return -112.1 success 1.0 max|Q| 68.43
+EP 650 eval_return -109.1 success 1.0 max|Q| 68.14
+EP 700 eval_return -114.3 success 1.0 max|Q| 67.98
+EP 750 eval_return -113.55 success 1.0 max|Q| 68.2
+EP 800 eval_return -120.5 success 1.0 max|Q| 68.72
+EP 850 eval_return -128.4 success 1.0 max|Q| 69.0
+EP 900 eval_return -131.7 success 1.0 max|Q| 69.27
+EP 950 eval_return -133.5 success 0.95 max|Q| 69.71
+EP 1000 eval_return -131.85 success 1.0 max|Q| 70.39
+
+=== SEED 4 ===
+
+EP 50 eval_return -135.15 success 0.85 max|Q| 27.83
+EP 100 eval_return -135.8 success 1.0 max|Q| 45.38
+EP 150 eval_return -126.3 success 1.0 max|Q| 54.42
+EP 200 eval_return -112.7 success 1.0 max|Q| 59.15
+EP 250 eval_return -124.55 success 1.0 max|Q| 61.73
+EP 300 eval_return -148.7 success 1.0 max|Q| 63.58
+EP 350 eval_return -134.9 success 1.0 max|Q| 65.67
+EP 400 eval_return -156.8 success 1.0 max|Q| 67.42
+EP 450 eval_return -168.5 success 0.8 max|Q| 68.77
+EP 500 eval_return -137.1 success 1.0 max|Q| 70.3
+EP 550 eval_return -137.7 success 1.0 max|Q| 71.6
+EP 600 eval_return -200.0 success 0.0 max|Q| 72.88
+EP 650 eval_return -147.5 success 0.7 max|Q| 74.7
+EP 700 eval_return -186.65 success 0.25 max|Q| 76.95
+EP 750 eval_return -159.85 success 0.75 max|Q| 79.18
+EP 800 eval_return -200.0 success 0.0 max|Q| 80.22
+EP 850 eval_return -200.0 success 0.0 max|Q| 81.43
+EP 900 eval_return -158.75 success 0.75 max|Q| 82.13
+EP 950 eval_return -154.15 success 0.75 max|Q| 82.56
+EP 1000 eval_return -155.55 success 0.85 max|Q| 82.57
+DONE sigma 0.15 alpha 0.003 final_return -143.33 final_success 0.9 final_max|Q| 74.89
+Summary saved to Q_multi_seed_summary.json
+
+=== SEED 0 ===
+
+EP 50 eval_return -121.65 success 1.0 max|Q| 40.54
+EP 100 eval_return -117.15 success 1.0 max|Q| 56.51
+EP 150 eval_return -116.55 success 1.0 max|Q| 61.19
+EP 200 eval_return -128.35 success 1.0 max|Q| 61.64
+EP 250 eval_return -131.05 success 1.0 max|Q| 62.36
+EP 300 eval_return -124.0 success 1.0 max|Q| 64.05
+EP 350 eval_return -127.0 success 1.0 max|Q| 66.84
+EP 400 eval_return -118.3 success 1.0 max|Q| 68.82
+EP 450 eval_return -110.55 success 1.0 max|Q| 69.3
+EP 500 eval_return -113.3 success 1.0 max|Q| 69.67
+EP 550 eval_return -114.4 success 1.0 max|Q| 69.41
+EP 600 eval_return -113.8 success 1.0 max|Q| 68.86
+EP 650 eval_return -111.95 success 1.0 max|Q| 67.1
+EP 700 eval_return -108.45 success 1.0 max|Q| 66.44
+EP 750 eval_return -110.45 success 1.0 max|Q| 65.92
+EP 800 eval_return -120.5 success 1.0 max|Q| 65.94
+EP 850 eval_return -128.15 success 1.0 max|Q| 66.53
+EP 900 eval_return -134.1 success 1.0 max|Q| 67.33
+EP 950 eval_return -137.85 success 1.0 max|Q| 69.15
+EP 1000 eval_return -136.4 success 1.0 max|Q| 71.1
+
+=== SEED 1 ===
+
+EP 50 eval_return -126.2 success 0.95 max|Q| 40.02
+EP 100 eval_return -119.25 success 1.0 max|Q| 57.01
+EP 150 eval_return -124.15 success 1.0 max|Q| 61.27
+EP 200 eval_return -129.9 success 1.0 max|Q| 62.44
+EP 250 eval_return -110.95 success 1.0 max|Q| 62.96
+EP 300 eval_return -116.75 success 1.0 max|Q| 64.57
+EP 350 eval_return -148.5 success 1.0 max|Q| 67.32
+EP 400 eval_return -200.0 success 0.0 max|Q| 69.8
+EP 450 eval_return -136.05 success 1.0 max|Q| 72.03
+EP 500 eval_return -134.6 success 1.0 max|Q| 72.82
+EP 550 eval_return -129.3 success 1.0 max|Q| 73.41
+EP 600 eval_return -130.25 success 1.0 max|Q| 73.07
+EP 650 eval_return -128.2 success 1.0 max|Q| 71.53
+EP 700 eval_return -127.4 success 1.0 max|Q| 70.8
+EP 750 eval_return -133.95 success 1.0 max|Q| 70.21
+EP 800 eval_return -132.5 success 1.0 max|Q| 70.14
+EP 850 eval_return -141.75 success 1.0 max|Q| 70.74
+EP 900 eval_return -149.2 success 1.0 max|Q| 71.62
+EP 950 eval_return -153.9 success 1.0 max|Q| 72.9
+EP 1000 eval_return -148.85 success 1.0 max|Q| 73.45
+
+=== SEED 2 ===
+
+EP 50 eval_return -119.4 success 1.0 max|Q| 40.54
+EP 100 eval_return -131.25 success 0.9 max|Q| 57.36
+EP 150 eval_return -136.95 success 0.9 max|Q| 61.39
+EP 200 eval_return -108.85 success 1.0 max|Q| 61.82
+EP 250 eval_return -125.4 success 1.0 max|Q| 62.64
+EP 300 eval_return -127.35 success 1.0 max|Q| 64.61
+EP 350 eval_return -160.6 success 0.7 max|Q| 67.3
+EP 400 eval_return -146.85 success 1.0 max|Q| 69.86
+EP 450 eval_return -192.6 success 0.1 max|Q| 72.77
+EP 500 eval_return -155.3 success 1.0 max|Q| 74.56
+EP 550 eval_return -145.7 success 1.0 max|Q| 75.35
+EP 600 eval_return -131.25 success 1.0 max|Q| 75.21
+EP 650 eval_return -141.45 success 1.0 max|Q| 75.44
+EP 700 eval_return -135.15 success 1.0 max|Q| 74.53
+EP 750 eval_return -135.5 success 1.0 max|Q| 73.98
+EP 800 eval_return -138.35 success 1.0 max|Q| 73.27
+EP 850 eval_return -157.75 success 0.85 max|Q| 73.39
+EP 900 eval_return -151.0 success 1.0 max|Q| 73.94
+EP 950 eval_return -148.85 success 1.0 max|Q| 74.6
+EP 1000 eval_return -146.8 success 1.0 max|Q| 75.31
+
+=== SEED 3 ===
+
+EP 50 eval_return -160.95 success 0.6 max|Q| 40.16
+EP 100 eval_return -117.7 success 1.0 max|Q| 57.3
+EP 150 eval_return -151.9 success 0.75 max|Q| 61.66
+EP 200 eval_return -117.55 success 1.0 max|Q| 62.66
+EP 250 eval_return -135.2 success 1.0 max|Q| 62.9
+EP 300 eval_return -137.45 success 1.0 max|Q| 64.62
+EP 350 eval_return -122.2 success 1.0 max|Q| 66.78
+EP 400 eval_return -129.6 success 1.0 max|Q| 68.85
+EP 450 eval_return -131.7 success 0.95 max|Q| 69.26
+EP 500 eval_return -111.6 success 1.0 max|Q| 69.44
+EP 550 eval_return -112.15 success 1.0 max|Q| 69.25
+EP 600 eval_return -114.5 success 1.0 max|Q| 68.77
+EP 650 eval_return -111.25 success 1.0 max|Q| 67.27
+EP 700 eval_return -109.05 success 1.0 max|Q| 66.23
+EP 750 eval_return -112.1 success 1.0 max|Q| 66.26
+EP 800 eval_return -114.7 success 1.0 max|Q| 66.41
+EP 850 eval_return -117.25 success 1.0 max|Q| 67.02
+EP 900 eval_return -130.25 success 1.0 max|Q| 67.48
+EP 950 eval_return -133.95 success 1.0 max|Q| 68.66
+EP 1000 eval_return -133.6 success 1.0 max|Q| 69.55
+
+=== SEED 4 ===
+
+EP 50 eval_return -121.2 success 1.0 max|Q| 40.57
+EP 100 eval_return -133.65 success 1.0 max|Q| 57.09
+EP 150 eval_return -111.9 success 1.0 max|Q| 61.26
+EP 200 eval_return -107.8 success 1.0 max|Q| 62.23
+EP 250 eval_return -124.35 success 1.0 max|Q| 62.82
+EP 300 eval_return -150.25 success 1.0 max|Q| 64.4
+EP 350 eval_return -127.65 success 1.0 max|Q| 66.9
+EP 400 eval_return -152.7 success 1.0 max|Q| 70.17
+EP 450 eval_return -145.95 success 1.0 max|Q| 72.38
+EP 500 eval_return -135.3 success 1.0 max|Q| 73.96
+EP 550 eval_return -123.5 success 1.0 max|Q| 74.62
+EP 600 eval_return -119.6 success 1.0 max|Q| 74.07
+EP 650 eval_return -125.1 success 1.0 max|Q| 73.2
+EP 700 eval_return -119.3 success 1.0 max|Q| 71.73
+EP 750 eval_return -125.45 success 1.0 max|Q| 70.98
+EP 800 eval_return -124.75 success 1.0 max|Q| 70.03
+EP 850 eval_return -135.6 success 1.0 max|Q| 69.98
+EP 900 eval_return -140.8 success 1.0 max|Q| 70.72
+EP 950 eval_return -154.9 success 1.0 max|Q| 71.96
+EP 1000 eval_return -155.4 success 1.0 max|Q| 73.53
+DONE sigma 0.15 alpha 0.005 final_return -144.21 final_success 1.0 final_max|Q| 72.59
+Summary saved to Q_multi_seed_summary.json
+
+=== SEED 0 ===
+
+EP 50 eval_return -134.9 success 0.85 max|Q| 39.69
+EP 100 eval_return -118.0 success 1.0 max|Q| 59.22
+EP 150 eval_return -117.25 success 1.0 max|Q| 66.23
+EP 200 eval_return -130.15 success 1.0 max|Q| 67.51
+EP 250 eval_return -116.55 success 1.0 max|Q| 67.45
+EP 300 eval_return -177.6 success 0.65 max|Q| 67.67
+EP 350 eval_return -143.95 success 1.0 max|Q| 68.6
+EP 400 eval_return -127.0 success 1.0 max|Q| 69.36
+EP 450 eval_return -126.75 success 1.0 max|Q| 69.47
+EP 500 eval_return -130.9 success 0.9 max|Q| 70.4
+EP 550 eval_return -143.95 success 0.75 max|Q| 72.39
+EP 600 eval_return -139.85 success 0.75 max|Q| 74.39
+EP 650 eval_return -146.6 success 0.75 max|Q| 76.71
+EP 700 eval_return -146.2 success 1.0 max|Q| 77.83
+EP 750 eval_return -136.85 success 1.0 max|Q| 78.9
+EP 800 eval_return -168.15 success 1.0 max|Q| 78.99
+EP 850 eval_return -149.15 success 1.0 max|Q| 78.78
+EP 900 eval_return -150.55 success 1.0 max|Q| 78.22
+EP 950 eval_return -132.55 success 1.0 max|Q| 77.78
+EP 1000 eval_return -131.75 success 1.0 max|Q| 77.27
+
+=== SEED 1 ===
+
+EP 50 eval_return -134.2 success 0.85 max|Q| 39.4
+EP 100 eval_return -124.5 success 0.95 max|Q| 59.32
+EP 150 eval_return -132.65 success 1.0 max|Q| 66.0
+EP 200 eval_return -149.0 success 0.8 max|Q| 67.69
+EP 250 eval_return -137.1 success 1.0 max|Q| 67.56
+EP 300 eval_return -105.4 success 1.0 max|Q| 67.56
+EP 350 eval_return -105.45 success 1.0 max|Q| 68.17
+EP 400 eval_return -119.65 success 1.0 max|Q| 68.37
+EP 450 eval_return -103.9 success 1.0 max|Q| 68.16
+EP 500 eval_return -119.3 success 1.0 max|Q| 68.16
+EP 550 eval_return -109.45 success 1.0 max|Q| 68.62
+EP 600 eval_return -117.75 success 1.0 max|Q| 68.72
+EP 650 eval_return -109.6 success 1.0 max|Q| 68.59
+EP 700 eval_return -119.15 success 1.0 max|Q| 68.36
+EP 750 eval_return -121.7 success 1.0 max|Q| 68.76
+EP 800 eval_return -129.6 success 1.0 max|Q| 69.56
+EP 850 eval_return -128.05 success 1.0 max|Q| 69.91
+EP 900 eval_return -125.15 success 1.0 max|Q| 70.35
+EP 950 eval_return -127.3 success 1.0 max|Q| 70.89
+EP 1000 eval_return -127.9 success 1.0 max|Q| 71.17
+
+=== SEED 2 ===
+
+EP 50 eval_return -120.55 success 1.0 max|Q| 39.72
+EP 100 eval_return -130.75 success 0.8 max|Q| 59.75
+EP 150 eval_return -131.0 success 0.9 max|Q| 66.17
+EP 200 eval_return -108.0 success 1.0 max|Q| 67.11
+EP 250 eval_return -144.8 success 0.95 max|Q| 67.54
+EP 300 eval_return -106.85 success 1.0 max|Q| 67.76
+EP 350 eval_return -124.95 success 1.0 max|Q| 67.97
+EP 400 eval_return -141.0 success 0.8 max|Q| 67.56
+EP 450 eval_return -116.35 success 1.0 max|Q| 67.61
+EP 500 eval_return -106.55 success 1.0 max|Q| 67.77
+EP 550 eval_return -108.8 success 1.0 max|Q| 68.19
+EP 600 eval_return -118.3 success 1.0 max|Q| 68.73
+EP 650 eval_return -119.9 success 1.0 max|Q| 69.38
+EP 700 eval_return -118.15 success 1.0 max|Q| 69.38
+EP 750 eval_return -126.7 success 1.0 max|Q| 69.24
+EP 800 eval_return -133.0 success 1.0 max|Q| 69.92
+EP 850 eval_return -131.0 success 1.0 max|Q| 70.46
+EP 900 eval_return -130.3 success 1.0 max|Q| 71.11
+EP 950 eval_return -132.7 success 1.0 max|Q| 71.29
+EP 1000 eval_return -133.0 success 1.0 max|Q| 72.03
+
+=== SEED 3 ===
+
+EP 50 eval_return -142.9 success 0.8 max|Q| 39.52
+EP 100 eval_return -116.25 success 1.0 max|Q| 59.61
+EP 150 eval_return -146.3 success 0.7 max|Q| 66.36
+EP 200 eval_return -113.05 success 1.0 max|Q| 67.94
+EP 250 eval_return -138.7 success 1.0 max|Q| 67.69
+EP 300 eval_return -108.8 success 1.0 max|Q| 67.81
+EP 350 eval_return -118.1 success 1.0 max|Q| 67.65
+EP 400 eval_return -109.65 success 1.0 max|Q| 68.06
+EP 450 eval_return -115.3 success 1.0 max|Q| 67.89
+EP 500 eval_return -119.75 success 1.0 max|Q| 67.38
+EP 550 eval_return -108.65 success 1.0 max|Q| 67.85
+EP 600 eval_return -112.0 success 1.0 max|Q| 68.27
+EP 650 eval_return -111.0 success 1.0 max|Q| 68.57
+EP 700 eval_return -118.25 success 1.0 max|Q| 68.53
+EP 750 eval_return -119.35 success 1.0 max|Q| 68.95
+EP 800 eval_return -135.5 success 1.0 max|Q| 69.68
+EP 850 eval_return -134.1 success 1.0 max|Q| 70.28
+EP 900 eval_return -131.85 success 1.0 max|Q| 70.61
+EP 950 eval_return -134.25 success 1.0 max|Q| 70.68
+EP 1000 eval_return -132.05 success 1.0 max|Q| 71.19
+
+=== SEED 4 ===
+
+EP 50 eval_return -132.0 success 0.9 max|Q| 39.69
+EP 100 eval_return -134.85 success 1.0 max|Q| 59.59
+EP 150 eval_return -133.6 success 1.0 max|Q| 66.16
+EP 200 eval_return -117.7 success 1.0 max|Q| 67.71
+EP 250 eval_return -137.35 success 1.0 max|Q| 67.69
+EP 300 eval_return -112.95 success 1.0 max|Q| 67.42
+EP 350 eval_return -131.95 success 1.0 max|Q| 67.8
+EP 400 eval_return -113.1 success 1.0 max|Q| 67.81
+EP 450 eval_return -120.2 success 1.0 max|Q| 67.56
+EP 500 eval_return -108.4 success 1.0 max|Q| 67.83
+EP 550 eval_return -108.55 success 1.0 max|Q| 68.06
+EP 600 eval_return -109.3 success 1.0 max|Q| 69.3
+EP 650 eval_return -114.4 success 1.0 max|Q| 69.3
+EP 700 eval_return -117.85 success 1.0 max|Q| 68.95
+EP 750 eval_return -132.25 success 1.0 max|Q| 69.3
+EP 800 eval_return -131.4 success 1.0 max|Q| 69.91
+EP 850 eval_return -135.45 success 1.0 max|Q| 70.53
+EP 900 eval_return -133.95 success 1.0 max|Q| 71.38
+EP 950 eval_return -133.1 success 1.0 max|Q| 71.54
+EP 1000 eval_return -135.15 success 1.0 max|Q| 71.69
+DONE sigma 0.2 alpha 0.003 final_return -131.97 final_success 1.0 final_max|Q| 72.67
+Summary saved to Q_multi_seed_summary.json
+
+=== SEED 0 ===
+
+EP 50 eval_return -120.05 success 1.0 max|Q| 54.88
+EP 100 eval_return -117.15 success 1.0 max|Q| 68.01
+EP 150 eval_return -117.05 success 1.0 max|Q| 69.01
+EP 200 eval_return -137.55 success 0.9 max|Q| 67.17
+EP 250 eval_return -150.75 success 1.0 max|Q| 66.23
+EP 300 eval_return -129.3 success 1.0 max|Q| 66.84
+EP 350 eval_return -134.05 success 1.0 max|Q| 68.35
+EP 400 eval_return -110.6 success 1.0 max|Q| 68.92
+EP 450 eval_return -113.85 success 1.0 max|Q| 68.96
+EP 500 eval_return -114.6 success 1.0 max|Q| 69.52
+EP 550 eval_return -110.15 success 1.0 max|Q| 69.9
+EP 600 eval_return -112.35 success 1.0 max|Q| 68.12
+EP 650 eval_return -132.85 success 1.0 max|Q| 67.78
+EP 700 eval_return -128.8 success 1.0 max|Q| 68.61
+EP 750 eval_return -137.15 success 1.0 max|Q| 69.29
+EP 800 eval_return -141.1 success 1.0 max|Q| 70.83
+EP 850 eval_return -136.45 success 1.0 max|Q| 70.94
+EP 900 eval_return -132.3 success 1.0 max|Q| 71.32
+EP 950 eval_return -145.75 success 1.0 max|Q| 71.2
+EP 1000 eval_return -148.0 success 1.0 max|Q| 72.01
+
+=== SEED 1 ===
+
+EP 50 eval_return -120.55 success 1.0 max|Q| 54.07
+EP 100 eval_return -119.4 success 1.0 max|Q| 68.68
+EP 150 eval_return -135.5 success 1.0 max|Q| 68.74
+EP 200 eval_return -130.6 success 1.0 max|Q| 67.46
+EP 250 eval_return -120.3 success 1.0 max|Q| 66.56
+EP 300 eval_return -109.15 success 1.0 max|Q| 67.03
+EP 350 eval_return -113.1 success 1.0 max|Q| 68.76
+EP 400 eval_return -113.95 success 1.0 max|Q| 69.72
+EP 450 eval_return -116.45 success 1.0 max|Q| 70.0
+EP 500 eval_return -129.05 success 0.85 max|Q| 69.46
+EP 550 eval_return -109.4 success 1.0 max|Q| 69.73
+EP 600 eval_return -115.5 success 1.0 max|Q| 66.91
+EP 650 eval_return -121.9 success 1.0 max|Q| 67.21
+EP 700 eval_return -128.3 success 1.0 max|Q| 68.23
+EP 750 eval_return -129.2 success 1.0 max|Q| 69.76
+EP 800 eval_return -133.15 success 1.0 max|Q| 70.47
+EP 850 eval_return -138.85 success 1.0 max|Q| 71.22
+EP 900 eval_return -134.5 success 1.0 max|Q| 71.0
+EP 950 eval_return -135.1 success 1.0 max|Q| 71.12
+EP 1000 eval_return -157.55 success 0.8 max|Q| 71.76
+
+=== SEED 2 ===
+
+EP 50 eval_return -120.15 success 1.0 max|Q| 54.82
+EP 100 eval_return -111.65 success 1.0 max|Q| 69.17
+EP 150 eval_return -132.35 success 0.9 max|Q| 68.78
+EP 200 eval_return -107.65 success 1.0 max|Q| 66.82
+EP 250 eval_return -115.85 success 1.0 max|Q| 66.43
+EP 300 eval_return -143.65 success 0.85 max|Q| 67.01
+EP 350 eval_return -118.15 success 1.0 max|Q| 67.55
+EP 400 eval_return -120.5 success 1.0 max|Q| 68.44
+EP 450 eval_return -111.55 success 1.0 max|Q| 68.84
+EP 500 eval_return -116.0 success 1.0 max|Q| 70.21
+EP 550 eval_return -104.65 success 1.0 max|Q| 68.54
+EP 600 eval_return -108.3 success 1.0 max|Q| 67.18
+EP 650 eval_return -127.55 success 1.0 max|Q| 67.11
+EP 700 eval_return -123.3 success 1.0 max|Q| 68.22
+EP 750 eval_return -131.1 success 1.0 max|Q| 70.24
+EP 800 eval_return -132.55 success 1.0 max|Q| 71.07
+EP 850 eval_return -139.2 success 1.0 max|Q| 71.47
+EP 900 eval_return -138.3 success 0.95 max|Q| 71.28
+EP 950 eval_return -139.5 success 1.0 max|Q| 71.86
+EP 1000 eval_return -145.9 success 0.9 max|Q| 73.38
+
+=== SEED 3 ===
+
+EP 50 eval_return -134.1 success 0.85 max|Q| 54.39
+EP 100 eval_return -109.8 success 1.0 max|Q| 69.08
+EP 150 eval_return -151.75 success 0.8 max|Q| 69.22
+EP 200 eval_return -112.7 success 1.0 max|Q| 67.77
+EP 250 eval_return -137.1 success 1.0 max|Q| 66.56
+EP 300 eval_return -143.0 success 1.0 max|Q| 67.21
+EP 350 eval_return -145.45 success 0.7 max|Q| 67.93
+EP 400 eval_return -118.9 success 1.0 max|Q| 68.73
+EP 450 eval_return -116.6 success 1.0 max|Q| 68.98
+EP 500 eval_return -108.0 success 1.0 max|Q| 69.97
+EP 550 eval_return -108.7 success 1.0 max|Q| 68.94
+EP 600 eval_return -123.1 success 0.95 max|Q| 66.42
+EP 650 eval_return -138.4 success 0.95 max|Q| 66.87
+EP 700 eval_return -133.1 success 0.95 max|Q| 67.33
+EP 750 eval_return -132.35 success 1.0 max|Q| 69.38
+EP 800 eval_return -139.7 success 1.0 max|Q| 70.92
+EP 850 eval_return -139.3 success 1.0 max|Q| 71.54
+EP 900 eval_return -134.1 success 1.0 max|Q| 71.29
+EP 950 eval_return -138.55 success 1.0 max|Q| 71.38
+EP 1000 eval_return -153.75 success 1.0 max|Q| 71.08
+
+=== SEED 4 ===
+
+EP 50 eval_return -121.3 success 1.0 max|Q| 54.87
+EP 100 eval_return -131.45 success 1.0 max|Q| 68.87
+EP 150 eval_return -130.35 success 1.0 max|Q| 68.97
+EP 200 eval_return -110.5 success 1.0 max|Q| 67.51
+EP 250 eval_return -127.3 success 1.0 max|Q| 66.58
+EP 300 eval_return -118.2 success 1.0 max|Q| 66.98
+EP 350 eval_return -139.15 success 0.85 max|Q| 68.92
+EP 400 eval_return -121.15 success 1.0 max|Q| 69.24
+EP 450 eval_return -114.5 success 1.0 max|Q| 69.71
+EP 500 eval_return -114.85 success 1.0 max|Q| 71.25
+EP 550 eval_return -109.0 success 1.0 max|Q| 69.2
+EP 600 eval_return -119.35 success 1.0 max|Q| 67.18
+EP 650 eval_return -124.3 success 1.0 max|Q| 67.92
+EP 700 eval_return -129.1 success 1.0 max|Q| 69.79
+EP 750 eval_return -131.9 success 1.0 max|Q| 70.55
+EP 800 eval_return -132.9 success 1.0 max|Q| 71.83
+EP 850 eval_return -145.05 success 1.0 max|Q| 71.86
+EP 900 eval_return -138.65 success 1.0 max|Q| 71.69
+EP 950 eval_return -136.35 success 1.0 max|Q| 70.93
+EP 1000 eval_return -141.95 success 1.0 max|Q| 71.35
+DONE sigma 0.2 alpha 0.005 final_return -149.43 final_success 0.94 final_max|Q| 71.92
+Summary saved to Q_multi_seed_summary.json

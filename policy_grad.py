@@ -170,17 +170,18 @@ def train_actor_critic(env_id, seed, rbf,
 # grad = grad_log_policy(phi_s, action=1, probs=probs)
 # print("grad shape:", grad.shape)
 # print("row sums maybe not zero, but ckeck finite: ", np.all(np.isfinite(grad)))
-Theta, v, history = train_actor_critic(
-    env_id="MountainCar-v0",
-    seed=0,
-    rbf=RBF(make_centers(7, 7), *get_state_bounds(make_env("MountainCar-v0", seed=0)), sigma=0.15, add_bias=True),
-    train_episodes=1000,
-    eval_every=50,
-    eval_episodes=20,
-    max_steps=200,
-    gamma=0.99,
-    alpha_theta=0.0005, # changing these learning rates can affect stability and convergence
-    alpha_v=0.005, # If the policy gets good by episode 200 and then degrades, that usually means updates are too aggressive.
-)
-import pprint
-pprint.pprint(history)
+
+# Theta, v, history = train_actor_critic(
+#     env_id="MountainCar-v0",
+#     seed=0,
+#     rbf=RBF(make_centers(7, 7), *get_state_bounds(make_env("MountainCar-v0", seed=0)), sigma=0.2, add_bias=True),
+#     train_episodes=2000,
+#     eval_every=50,
+#     eval_episodes=20,
+#     max_steps=200, # not changing max_steps since it will affect score
+#     gamma=0.99,
+#     alpha_theta=0.0005, # changing these learning rates can affect stability and convergence
+#     alpha_v=0.005, # If the policy gets good by episode 200 and then degrades, that usually means updates are too aggressive.
+# )
+# import pprint
+# pprint.pprint(history)
