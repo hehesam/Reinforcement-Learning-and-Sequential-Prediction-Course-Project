@@ -128,15 +128,35 @@ def Q_call_multiseed(env_id, seeds):
     for sigma in [0.15, 0.20]:
         rbf = make_rbf_for_sigma(env_id, seed=0, sigma=sigma)  # bounds same regardless of seed
         for alpha in [0.003, 0.005]:
-            _, summary = run_multiseed_q(env_id, seeds, rbf, train_episodes=1000, eval_every=50,
-                                        eval_episodes=20, gamma=0.99, alpha=alpha)
+            all_histories, summary = run_multiseed_q(env_id, seeds, rbf, train_episodes=1000, eval_every=50,
+                                                    eval_episodes=20, gamma=0.99, alpha=alpha)
             final = summary[-1]
-            results.append({"sigma": sigma, "alpha": alpha, **final})
+
+            # Per-seed final-episode values (for box plots)
+            per_seed_final_return   = [float(h[-1]["return_mean"])   for h in all_histories]
+            per_seed_final_success  = [float(h[-1]["success_rate"])   for h in all_histories]
+            # Per-seed full learning curves (for individual-seed curve plots)
+            per_seed_return_history = [[float(cp["return_mean"])  for cp in h] for h in all_histories]
+            per_seed_success_history= [[float(cp["success_rate"]) for cp in h] for h in all_histories]
+
+            results.append({
+                "sigma": sigma,
+                "alpha": alpha,
+                **final,
+                # Full checkpoint history (for learning-curve plots)
+                "history": summary,
+                # Raw per-seed data (for box / violin / individual-seed plots)
+                "per_seed_final_return":    per_seed_final_return,
+                "per_seed_final_success":   per_seed_final_success,
+                "per_seed_return_history":  per_seed_return_history,
+                "per_seed_success_history": per_seed_success_history,
+            })
+
             print("DONE sigma", sigma, "alpha", alpha,
                 "final_return", round(final["return_mean_mean"],2),
                 "final_success", round(final["success_rate_mean"],2),
                 "final_max|Q|", round(final["max_abs_Q_mean"],2))
-            
+
             with open("Q_multi_seed_summary.json", "w") as f:
                 json.dump(results, f, indent=2)
 
@@ -149,14 +169,36 @@ def AC_call_multiseed(env_id, seeds):
         rbf = make_rbf_for_sigma(env_id, seed=0, sigma=sigma)  # bounds same regardless of seed
         for alpha_theta in [0.0003, 0.0005]:
             for alpha_v in [0.003, 0.005]:
-                _, summary = run_multiseed_ac(env_id, seeds, rbf, train_episodes=1000, eval_every=50,
-                                            eval_episodes=20, gamma=0.99, alpha_theta=alpha_theta, alpha_v=alpha_v)
+                all_histories, summary = run_multiseed_ac(env_id, seeds, rbf, train_episodes=1000, eval_every=50,
+                                                         eval_episodes=20, gamma=0.99,
+                                                         alpha_theta=alpha_theta, alpha_v=alpha_v)
                 final = summary[-1]
-                results.append({"sigma": sigma, "alpha_theta": alpha_theta, "alpha_v": alpha_v, **final})
+
+                # Per-seed final-episode values (for box plots)
+                per_seed_final_return   = [float(h[-1]["return_mean"])   for h in all_histories]
+                per_seed_final_success  = [float(h[-1]["success_rate"])   for h in all_histories]
+                # Per-seed full learning curves (for individual-seed curve plots)
+                per_seed_return_history = [[float(cp["return_mean"])  for cp in h] for h in all_histories]
+                per_seed_success_history= [[float(cp["success_rate"]) for cp in h] for h in all_histories]
+
+                results.append({
+                    "sigma": sigma,
+                    "alpha_theta": alpha_theta,
+                    "alpha_v": alpha_v,
+                    **final,
+                    # Full checkpoint history (for learning-curve plots)
+                    "history": summary,
+                    # Raw per-seed data (for box / violin / individual-seed plots)
+                    "per_seed_final_return":    per_seed_final_return,
+                    "per_seed_final_success":   per_seed_final_success,
+                    "per_seed_return_history":  per_seed_return_history,
+                    "per_seed_success_history": per_seed_success_history,
+                })
+
                 print("DONE sigma", sigma, "alpha_theta", alpha_theta, "alpha_v", alpha_v,
                     "final_return", round(final["return_mean_mean"],2),
                     "final_success", round(final["success_rate_mean"],2))
-                
+
                 with open("ac_multi_seed_summary.json", "w") as f:
                     json.dump(results, f, indent=2)
 
